@@ -1,0 +1,1 @@
+﻿$GitHubRepository = 'icinga'$GitHubLocalRepoRoot = $env:USERPROFILE + '\Git'$GitHubRepositoryRoot = $GitHubLocalRepoRoot + '\' + $GitHubRepositoryGet-ChildItem -Path $GitHubRepositoryRoot

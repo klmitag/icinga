@@ -19,8 +19,33 @@ If (!$Updates) {
 }
 
 If ($Updates) {
-    $Updates = $Updates | Select-Object Title, SupportUrl | Format-Table
+    #$Updates = $Updates | Select-Object Title, SupportUrl | Format-Table
+    Foreach ($Update in $Updates) {
+        $UpdateTitle = $Update.Title
+        $UpdateSupportUrl = $Update.SupportUrl
+        $HTMLFormatetUpdates += '<tr>
+            <td>{0}</td>
+            <td>{1}</td>
+        </tr>' -f $UpdateTitle, $UpdateSupportUrl
+    }
     $ReturnCode = 1
     Write-Host "There are Windows Updates pending!"
-    Write-Host "blah"
+    Write-Host "<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Support URL</th>
+        </tr>
+    </thead>
+    <tbody>"
+        "<tr>
+            <td>  :</td>
+            <td>" + $catridge_usage_prc + " %</td>
+        </tr>"
+        "<tr>
+            <td> :</td>
+            <td>" + $page_count + "</td>
+        </tr>
+    </tbody>
+</table>"
 }

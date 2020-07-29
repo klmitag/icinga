@@ -42,3 +42,5 @@ If ($Updates) {
     </tbody>
 </table>"
 }
+
+Exit ($ReturnCode)

@@ -25,7 +25,7 @@ If ($Updates) {
         $UpdateSupportUrl = $Update.SupportUrl
         $HTMLFormatetUpdates += '<tr>
             <td>{0}</td>
-            <td>{1}</td>
+            <td><a href="{1}" target="_blank">{1}</a></td>
         </tr>' -f $UpdateTitle, $UpdateSupportUrl
     }
     $ReturnCode = 1

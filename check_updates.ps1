@@ -37,15 +37,8 @@ If ($Updates) {
             <th>Support URL</th>
         </tr>
     </thead>
-    <tbody>"
-        "<tr>
-            <td>  :</td>
-            <td>" + $catridge_usage_prc + " %</td>
-        </tr>"
-        "<tr>
-            <td> :</td>
-            <td>" + $page_count + "</td>
-        </tr>
+    <tbody>
+        $HTMLFormatetUpdates
     </tbody>
 </table>"
 }

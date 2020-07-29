@@ -21,5 +21,6 @@ If (!$Updates) {
 If ($Updates) {
     $Updates = $Updates | Select-Object Title, SupportUrl | Format-Table
     $ReturnCode = 1
-    Write-Host "There are Windows Updates pending!" $Updates
+    Write-Host "There are Windows Updates pending!"
+    Write-Host "blah"
 }
